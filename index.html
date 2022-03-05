@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .topHeader{
+            text-align: center;
+            font-size: 35px;
+        }
+        .mainContainer{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            
+            justify-content: center;
+        }
+        /* .left{
+            border: 1px solid black;
+        }
+        .middle{
+            border: 1px solid black;
+        }
+        .right{
+            border: 1px solid black;
+        } */
+        #c0{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: #aa2522;
+            font-size: 35px;
+            color: white;
+        }
+        #c1{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: #89a02d;
+        }
+        #c2{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: #ee5252;
+        }
+        #c3{
+            box-sizing: border-box;
+            border: 6px solid black;
+            background-color: beige;
+        }
+        #c4{
+            background-color: #2046f5;
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+        #c5{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: #6d535e;
+        }
+        #c6{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: #ab3488;
+        }
+        #c7{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: #ec3c65;
+        }
+        #c8{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: #facc48;
+        }
+        #c8float{
+            justify-content: right;
+        }
+        #c9{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: #5aa02c;
+        }
+        #c10{
+            box-sizing: border-box;
+            background-color: #47582e;
+        }
+        #c11{
+            box-sizing: border-box;
+            background-color: #95bc5f;
+        }
+        .rowb{
+            height: 65px;
+            margin-bottom: 15px;
+        }
+        .row{
+            height: 65px;
+            display: flex;
+            justify-content: left;
+            margin-bottom: 15px;
+        }
+        .box{
+            height: 100%;
+            line-height: 60px;
+            width: 65px;
+            margin-right: 15px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .silicon{
+            height: 200px;
+            width: 200px;
+            margin-top: 15px;
+            margin-left: -10px;
+            margin-bottom: 25px;
+        }
+        .si1{
+            text-align: right;
+            margin: 10px 10px 0 0;
+            font-size: 25px;
+        }
+        .si2{
+            font-size: 70px;
+            margin: 0px 0px 0 10px;
+        }
+        .si3{
+            margin: 20px 0px 0px 10px;
+            font-size: 25px;
+        }
+        .bottomBox{
+            margin-top: 55px;
+            
+        }
+        .rowBottom{
+            margin-left: -40px;
+            display: flex;
+            justify-content: center;
+        }
+        .box2{
+            height: 50px;
+            width: 50px;
+            font-size: 25px;
+            border: 1px solid black;
+        }
+        .algn{
+            text-align: center;
+            line-height: 50px;
+        }
+        .algn1{
+            text-align: center;
+            line-height: 60px;
+            color: white;
+        }
+        .algn2{
+            text-align: right;
+            line-height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <p class="topHeader">THE PERIODIC TABLE OF ELEMENTS</p>
+    <div class="mainContainer">
+        <div class="left">
+            <div class="row">
+                <div class="box" id="c0">H</div>
+            </div>
+            <div class="row">
+                <div class="box" id="c1"></div>
+                <div class="box" id="c2">4</div>
+            </div>
+            <div class="row">
+                <div class="box" id="c1"></div>
+                <div class="box" id="c2">12</div>
+            </div>
+            <div class="row">
+                <div class="box" id="c1"></div>
+                <div class="box" id="c2">20</div>
+            </div>
+            <div class="row">
+                <div class="box" id="c1"></div>
+                <div class="box" id="c2">38</div>
+            </div>
+            <div class="row">
+                <div class="box" id="c1"></div>
+                <div class="box" id="c2">56</div>
+                <div class="box" id="c3"></div>
+            </div>
+            <div class="row">
+                <div class="box" id="c1"></div>
+                <div class="box" id="c2">88</div>
+                <div class="box" id="c3"></div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="silicon" id="c1">
+                <p class="si1">14</p>
+                <p class="si2">Si</p>
+                <p class="si3">Silicon</p>
+            </div>
+            <div class="rowb">
+                <div class="row">
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                </div>
+                <div class="row">
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                </div>
+                <div class="row">
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                </div>
+                <div class="row">
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                    <div class="box" id="c4"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="right">
+            <div class="row" id="c8float">
+                <div class="box" id="c8"></div>
+            </div>
+            <div class="row">
+                <div class="box" id="c6"></div>
+                <div class="box" id="c9"></div>
+                <div class="box" id="c9"></div>
+                <div class="box" id="c9"></div>
+                <div class="box" id="c2"></div>
+                <div class="box" id="c8"></div>
+            </div>
+            <div class="row">
+                <div class="box" id="c1"></div>
+                <div class="box" id="c6"></div>
+                <div class="box" id="c9"></div>
+                <div class="box" id="c9"></div>
+                <div class="box" id="c2"></div>
+                <div class="box" id="c8"></div>
+            </div>
+            <div class="row">
+                <div class="box" id="c1"></div>
+                <div class="box" id="c6"></div>
+                <div class="box" id="c6"></div>
+                <div class="box" id="c9"></div>
+                <div class="box" id="c2"></div>
+                <div class="box" id="c8"></div>
+            </div>
+            <div class="row">
+                <div class="box" id="c1"></div>
+                <div class="box" id="c1"></div>
+                <div class="box" id="c6"></div>
+                <div class="box" id="c6"></div>
+                <div class="box" id="c2"></div>
+                <div class="box" id="c8"></div>
+            </div>
+            <div class="row">
+                <div class="box" id="c1"></div>
+                <div class="box" id="c1"></div>
+                <div class="box" id="c1"></div>
+                <div class="box" id="c6"></div>
+                <div class="box" id="c2"></div>
+                <div class="box" id="c8"></div>
+            </div>
+            <div class="row">
+                <div class="box" id="c5"></div>
+                <div class="box" id="c5"></div>
+                <div class="box" id="c5"></div>
+                <div class="box" id="c5"></div>
+                <div class="box" id="c5"></div>
+                <div class="box" id="c5"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottomBox">
+        <div class="rowBottom">
+            <div class="box2 algn1" id="c10">La</div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+            <div class="box2" id="c10"></div>
+        </div>
+        <div class="rowBottom">
+            <div class="box2" id="c11"></div>
+            <div class="box2" id="c11"></div>
+            <div class="box2" id="c11"></div>
+            <div class="box2" id="c11"></div>
+            <div class="box2" id="c11"></div>
+            <div class="box2" id="c11"></div>
+            <div class="box2 algn" id="c11">Am</div>
+            <div class="box2" id="c11"></div>
+            <div class="box2" id="c11"></div>
+            <div class="box2" id="c11"></div>
+            <div class="box2" id="c11"></div>
+            <div class="box2" id="c11"></div>
+            <div class="box2" id="c11"></div>
+            <div class="box2 algn2" id="c11">No</div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
